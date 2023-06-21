@@ -1,5 +1,14 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Handlee&family=Inter:wght@200;400;600;800&display=swap');
+
+
+:root{
+--font1-: 'Comfortaa', 'cursive';
+--font2-: 'Handlee', 'cursive';
+--font3-: 'Inter', 'sans-serif';
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -8,29 +17,31 @@
 html, body{
     background-color: rgba(83, 81, 81, 0.26);
     min-height: 100vh;
+    font-family: var(--font1-);
 }
 
 header{
     background-image: url(image/header.png);
     background-position: center center;
     background-size: cover;
-    background-color: #8181a1;   
+    background-color: #664f11;   
     text-align: center;
     font-family: serif;
 }
 
 header > h1{
+    font-family: var(--font1-);
     padding-top: 50px;
     font-variant: small-caps;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.767);
-    font-size: 50px;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.767);
+    font-size: 8vw;
+    font-weight: 700px;
     
 }
 
 header > p{
     padding-bottom: 50px;
-    
-    
+    font-family: var(--font3-);
 }
 
 a {
@@ -46,6 +57,9 @@ a:hover{
 section{
     padding-top: 10vh;
     padding-bottom: 10vh;
+    line-height: 1.5em;
+    padding-left: 30px;
+    font-size: 3vw;
 }
 
 section.normal{
@@ -54,8 +68,14 @@ section.normal{
 }
 
 section.imagem{
-    background-color: #000000;
+    background-color: #00000094;
     color: #ffffff;
+}
+
+section.imagem > p{
+    background-color: #00000049;
+    width: max-content;
+    padding: 10px 10px;
 }
 
 footer{
