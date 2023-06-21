@@ -11,25 +11,56 @@ html, body{
 }
 
 header{
-    background-color: black;
-    color: white;
+    background-image: url(image/header.png);
+    background-position: center center;
+    background-size: cover;
+    background-color: #8181a1;   
     text-align: center;
+    font-family: serif;
 }
 
 header > h1{
     padding-top: 50px;
     font-variant: small-caps;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.767);
+    font-size: 50px;
+    
 }
 
 header > p{
     padding-bottom: 50px;
+    
+    
 }
 
 a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-weight: bolder;
 }
 
 a:hover{
     text-decoration: underline;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+section.normal{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+section.imagem{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
